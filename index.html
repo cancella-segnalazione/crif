@@ -220,48 +220,57 @@
         <a href="termini-condizioni.html" style="color: white; margin: 0 10px; text-decoration: none;">Termini e Condizioni</a>
     </nav>
 </footer>
-<!-- COOKIE BANNER GDPR -->
-    <div id="cookie-banner">
-        <p>Utilizziamo cookie per migliorare la tua esperienza. Puoi accettare, rifiutare o personalizzare le preferenze in base alle normative GDPR.</p>
-        <div class="cookie-buttons">
-            <button class="accept" onclick="acceptCookies()">ACCETTO</button>
-            <button class="reject" onclick="rejectCookies()">RIFIUTO</button>
-            <button class="customize" onclick="togglePreferences()">ACCETTO SELEZIONATI</button>
-        </div>
-        <div id="cookie-preferences">
-            <h3>Preferenze Cookie</h3>
-            <label><input type="checkbox" checked disabled> Necessari (sempre attivi)</label>
-            <label><input type="checkbox" id="analytics"> Statistiche</label>
-            <label><input type="checkbox" id="marketing"> Marketing</label>
-            <button onclick="savePreferences()">Salva Preferenze</button>
-        </div>
+<!-- Banner Cookie GDPR -->
+<div id="cookie-banner" style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); padding: 20px; max-width: 600px; width: 90%; font-family: Arial, sans-serif; z-index: 9999; display: none;">
+    <p style="margin-bottom: 15px; font-size: 14px; color: #333;">
+        Utilizziamo cookie per migliorare la tua esperienza. Puoi accettare, rifiutare o personalizzare le preferenze in base alle normative GDPR.
+    </p>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <button onclick="acceptCookies()" style="background: black; color: white; padding: 8px 15px; border: none; border-radius: 5px; cursor: pointer;">ACCETTO</button>
+        <button onclick="rejectCookies()" style="background: black; color: white; padding: 8px 15px; border: none; border-radius: 5px; cursor: pointer;">RIFIUTO</button>
+        <button onclick="acceptSelectedCookies()" style="background: black; color: white; padding: 8px 15px; border: none; border-radius: 5px; cursor: pointer;">ACCETTO SELEZIONATI</button>
     </div>
+    <details style="margin-top: 15px; font-size: 13px; color: #333;">
+        <summary style="cursor: pointer;">Preferenze Cookie</summary>
+        <form style="margin-top: 10px;">
+            <label><input type="checkbox" checked disabled> Necessari (sempre attivi)</label><br>
+            <label><input type="checkbox" name="statistici"> Statistiche</label><br>
+            <label><input type="checkbox" name="marketing"> Marketing</label><br>
+            <button type="button" onclick="saveCookiePreferences()" style="margin-top: 8px; background: black; color: white; padding: 6px 12px; border: none; border-radius: 5px; cursor: pointer;">Salva Preferenze</button>
+        </form>
+    </details>
+</div>
 
-    <script>
-        function acceptCookies() {
-            localStorage.setItem('cookies', 'all');
-            document.getElementById('cookie-banner').style.display = 'none';
-        }
-        function rejectCookies() {
-            localStorage.setItem('cookies', 'none');
-            document.getElementById('cookie-banner').style.display = 'none';
-        }
-        function togglePreferences() {
-            const prefs = document.getElementById('cookie-preferences');
-            prefs.style.display = prefs.style.display === 'block' ? 'none' : 'block';
-        }
-        function savePreferences() {
-            let prefs = {
-                analytics: document.getElementById('analytics').checked,
-                marketing: document.getElementById('marketing').checked
-            };
-            localStorage.setItem('cookies', JSON.stringify(prefs));
-            document.getElementById('cookie-banner').style.display = 'none';
-        }
-        // Mostra il banner solo se non è già stata salvata una scelta
-        if (localStorage.getItem('cookies')) {
-            document.getElementById('cookie-banner').style.display = 'none';
-        }
-    </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    if (!localStorage.getItem("cookieConsent")) {
+        document.getElementById("cookie-banner").style.display = "block";
+    }
+});
+
+function acceptCookies() {
+    localStorage.setItem("cookieConsent", "all");
+    document.getElementById("cookie-banner").style.display = "none";
+}
+
+function rejectCookies() {
+    localStorage.setItem("cookieConsent", "none");
+    document.getElementById("cookie-banner").style.display = "none";
+}
+
+function acceptSelectedCookies() {
+    saveCookiePreferences();
+}
+
+function saveCookiePreferences() {
+    const preferences = {
+        statistici: document.querySelector("input[name='statistici']").checked,
+        marketing: document.querySelector("input[name='marketing']").checked
+    };
+    localStorage.setItem("cookieConsent", JSON.stringify(preferences));
+    document.getElementById("cookie-banner").style.display = "none";
+}
+</script>
+
 </body>
 </html>
