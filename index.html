@@ -204,9 +204,64 @@
         </a>
     </div>
 
-    <footer>
-  <img src="assets/images/logo-cancella-segnalazione-crif.png" alt="Cancella Segnalazione">
-  <p>© 2025 CancellaSegnalazione è un brand di QUINTA DIMENSIONE srls – P. IVA 05282450260 – Tutti i diritti riservati.</p>
+    <footer style="background-color: black; padding: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; color: white;">
+    <!-- Logo -->
+    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+        <img src="assets/images/logo-cancella-segnalazione-crif.png" 
+             alt="Cancella Segnalazione CRIF" 
+             style="height: 50px; margin-right: 15px;">
+        <span>© 2025 QUINTA DIMENSIONE srls</span>
+    </div>
+
+    <!-- Link di navigazione -->
+    <nav>
+        <a href="contatti.html" style="color: white; margin: 0 10px; text-decoration: none;">Contatti</a>
+        <a href="privacy-policy.html" style="color: white; margin: 0 10px; text-decoration: none;">Privacy Policy</a>
+        <a href="termini-condizioni.html" style="color: white; margin: 0 10px; text-decoration: none;">Termini e Condizioni</a>
+    </nav>
 </footer>
+<!-- COOKIE BANNER GDPR -->
+    <div id="cookie-banner">
+        <p>Utilizziamo cookie per migliorare la tua esperienza. Puoi accettare, rifiutare o personalizzare le preferenze in base alle normative GDPR.</p>
+        <div class="cookie-buttons">
+            <button class="accept" onclick="acceptCookies()">ACCETTO</button>
+            <button class="reject" onclick="rejectCookies()">RIFIUTO</button>
+            <button class="customize" onclick="togglePreferences()">ACCETTO SELEZIONATI</button>
+        </div>
+        <div id="cookie-preferences">
+            <h3>Preferenze Cookie</h3>
+            <label><input type="checkbox" checked disabled> Necessari (sempre attivi)</label>
+            <label><input type="checkbox" id="analytics"> Statistiche</label>
+            <label><input type="checkbox" id="marketing"> Marketing</label>
+            <button onclick="savePreferences()">Salva Preferenze</button>
+        </div>
+    </div>
+
+    <script>
+        function acceptCookies() {
+            localStorage.setItem('cookies', 'all');
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+        function rejectCookies() {
+            localStorage.setItem('cookies', 'none');
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+        function togglePreferences() {
+            const prefs = document.getElementById('cookie-preferences');
+            prefs.style.display = prefs.style.display === 'block' ? 'none' : 'block';
+        }
+        function savePreferences() {
+            let prefs = {
+                analytics: document.getElementById('analytics').checked,
+                marketing: document.getElementById('marketing').checked
+            };
+            localStorage.setItem('cookies', JSON.stringify(prefs));
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+        // Mostra il banner solo se non è già stata salvata una scelta
+        if (localStorage.getItem('cookies')) {
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
