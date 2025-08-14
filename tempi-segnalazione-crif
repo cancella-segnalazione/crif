@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempi Segnalazione CRIF: Quanto Durano e Come Verificarli 2024</title>
+    <meta name="description" content="Scopri tutti i tempi delle segnalazioni CRIF: durata, scadenza e tempistiche per la rimozione automatica. Guida completa aggiornata 2024 con procedure e diritti.">
+    <meta name="keywords" content="tempi segnalazione crif, durata segnalazioni crif, scadenza crif, quando scade segnalazione crif, tempistiche crif, rimozione automatica crif">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Esperti Segnalazioni CRIF">
+    <link rel="canonical" href="https://example.com/tempi-segnalazione-crif">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tempi Segnalazione CRIF: Quanto Durano e Come Verificarli 2024">
+    <meta property="og:description" content="Guida completa sui tempi delle segnalazioni CRIF: durata, scadenza e procedure per la verifica delle tempistiche.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://example.com/tempi-segnalazione-crif">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Tempi Segnalazione CRIF: Quanto Durano e Come Verificarli 2024",
+        "description": "Scopri tutti i tempi delle segnalazioni CRIF: durata, scadenza e tempistiche per la rimozione automatica con guide dettagliate.",
+        "author": {
+            "@type": "Organization",
+            "name": "Esperti Segnalazioni CRIF"
+        },
+        "datePublished": "2024-08-14",
+        "dateModified": "2024-08-14",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://example.com/tempi-segnalazione-crif"
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+        
+        header, footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .header-content, .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            height: 50px;
+            width: auto;
+        }
+        
+        .header-text {
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        main {
+            padding: 40px 0;
+        }
+        
+        .content-widget {
+            background-color: #ffffff;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 20px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border: 1px solid #f0f0f0;
+        }
+        
+        h2 {
+            color: #000;
+            font-size: 1.8em;
+            margin: 30px 0 15px 0;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #333;
+            font-size: 1.4em;
+            margin: 25px 0 12px 0;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .highlight {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #000;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .time-table {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+        
+        .time-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .time-row:last-child {
+            border-bottom: none;
+        }
+        
+        .time-type {
+            font-weight: bold;
+            color: #000;
+            flex: 1;
+        }
+        
+        .time-duration {
+            background-color: #000;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        
+        .warning-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .warning-title {
+            color: #856404;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .steps {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .step {
+            margin: 15px 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .step:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-section {
+            margin-top: 40px;
+        }
+        
+        .faq-item {
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            background-color: #f8f9fa;
+            padding: 15px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .faq-answer {
+            padding: 15px 20px;
+            background-color: #ffffff;
+        }
+        
+        .whatsapp-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 1000;
+        }
+        
+        .whatsapp-button:hover {
+            background-color: #20BA5A;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+        }
+        
+        .whatsapp-icon {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+        
+        @media (max-width: 768px) {
+            .content-widget {
+                padding: 25px;
+                margin: 15px 0;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .whatsapp-button {
+                bottom: 20px;
+                right: 20px;
+                padding: 12px 16px;
+            }
+            
+            .header-content, .footer-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .logo {
+                height: 40px;
+            }
+            
+            .time-row {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="assets/images/logo-cancella-segnalazione-crif.png" alt="Logo Cancella Segnalazione CRIF" class="logo">
+                <div class="header-text">
+                    <h1>Tempi Segnalazione CRIF</h1>
+                    <p class="subtitle">Guida completa su durata e tempistiche delle segnalazioni creditizie</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content-widget">
+                <h2>Tempi delle Segnalazioni CRIF: Tutto Quello che Devi Sapere</h2>
+                
+                <p>Comprendere i <strong>tempi delle segnalazioni CRIF</strong> è fondamentale per chiunque voglia monitorare il proprio profilo creditizio e pianificare strategie finanziarie future. Le tempistiche non sono casuali ma seguono regole precise stabilite dalla normativa italiana ed europea.</p>
+
+                <div class="highlight">
+                    <strong>Informazione Cruciale:</strong> I tempi di permanenza delle segnalazioni CRIF variano in base al tipo di inadempienza e possono influenzare significativamente la tua capacità di ottenere credito per anni.
+                </div>
+
+                <h2>Tabella Completa dei Tempi CRIF</h2>
+                
+                <div class="time-table">
+                    <div class="time-row">
+                        <div class="time-type">Segnalazioni Positive (Pagamenti Regolari)</div>
+                        <div class="time-duration">36 Mesi</div>
+                    </div>
+                    <div class="time-row">
+                        <div class="time-type">Ritardi di Pagamento (30-90 giorni)</div>
+                        <div class="time-duration">12 Mesi</div>
+                    </div>
+                    <div class="time-row">
+                        <div class="time-type">Ritardi Gravi (oltre 90 giorni)</div>
+                        <div class="time-duration">24 Mesi</div>
+                    </div>
+                    <div class="time-row">
+                        <div class="time-type">Insolvenze e Sofferenze</div>
+                        <div class="time-duration">36 Mesi</div>
+                    </div>
+                    <div class="time-row">
+                        <div class="time-type">Protestos e Procedure Esecutive</div>
+                        <div class="time-duration">36 Mesi</div>
+                    </div>
+                </div>
+
+                <h3>Come Vengono Calcolati i Tempi</h3>
+                <p>I tempi delle segnalazioni CRIF iniziano a decorrere dalla data di chiusura del rapporto creditizio o dalla regolarizzazione della posizione debitoria. È importante sapere che:</p>
+
+                <div class="steps">
+                    <div class="step">
+                        <strong>Data di Inizio:</strong> Il conteggio inizia dal momento in cui il debito viene saldato o il rapporto chiuso, non dalla data della prima inadempienza.
+                    </div>
+                    <div class="step">
+                        <strong>Aggiornamenti Mensili:</strong> CRIF aggiorna i dati mediamente ogni 30 giorni, quindi i cambiamenti potrebbero non essere immediati.
+                    </div>
+                    <div class="step">
+                        <strong>Cancellazione Automatica:</strong> Allo scadere dei termini, le segnalazioni vengono rimosse automaticamente senza necessità di richiesta.
+                    </div>
+                </div>
+
+                <h2>Fattori che Influenzano i Tempi</h2>
+
+                <h3>Gravità dell'Inadempienza</h3>
+                <p>La durata della segnalazione è proporzionale alla gravità del problema creditizio. Un semplice ritardo di pagamento di 30 giorni avrà un impatto temporale molto inferiore rispetto a un'insolvenza completa.</p>
+
+                <h3>Tipo di Credito</h3>
+                <p>Mutui, prestiti personali, carte di credito e finanziamenti possono avere tempistiche leggermente diverse in base agli accordi specifici e alla tipologia di istituto segnalante.</p>
+
+                <div class="warning-box">
+                    <div class="warning-title">⚠️ Attenzione alle Date</div>
+                    <p>Molti consumatori confondono la data di inizio dell'inadempienza con la data di inizio del conteggio per la cancellazione. Quest'ultima inizia solo dopo la risoluzione del problema creditizio.</p>
+                </div>
+
+                <h2>Come Verificare i Tuoi Tempi di Segnalazione</h2>
+
+                <p>Per monitorare accuratamente i tempi delle tue segnalazioni CRIF, segui questi passaggi:</p>
+
+                <h3>1. Richiedi il Tuo Report Creditizio</h3>
+                <p>Puoi ottenere gratuitamente una copia del tuo report CRIF una volta all'anno. Questo documento contiene tutte le informazioni sulle tempistiche.</p>
+
+                <h3>2. Analizza le Date Chiave</h3>
+                <p>Nel report, cerca le seguenti informazioni per ogni segnalazione:</p>
+                <p>• Data di apertura del rapporto creditizio</p>
+                <p>• Data dell'ultima inadempienza</p>
+                <p>• Data di chiusura/regolarizzazione</p>
+                <p>• Data prevista di cancellazione automatica</p>
+
+                <h3>3. Calcola i Tempi Residui</h3>
+                <p>Sottrai la data attuale dalla data di scadenza prevista per sapere quanto tempo manca alla cancellazione automatica di ogni segnalazione.</p>
+
+                <h2>Strategie per Gestire i Tempi</h2>
+
+                <h3>Accelerare la Rimozione</h3>
+                <p>Sebbene i tempi standard siano fissi, esistono situazioni in cui è possibile richiedere una rimozione anticipata:</p>
+                <p>• Errori nei dati registrati</p>
+                <p>• Violazioni procedurali nella segnalazione</p>
+                <p>• Accordi specifici con il creditore</p>
+
+                <h3>Migliorare il Profilo Durante l'Attesa</h3>
+                <p>Mentre aspetti la scadenza naturale delle segnalazioni negative, puoi lavorare per migliorare il tuo score creditizio:</p>
+                <p>• Mantieni comportamenti di pagamento virtuosi</p>
+                <p>• Evita nuove richieste di credito non necessarie</p>
+                <p>• Considera prodotti di riabilitazione creditizia</p>
+
+                <div class="highlight">
+                    <strong>Consiglio Pratico:</strong> Tieni un calendario delle scadenze delle tue segnalazioni per monitorare i progressi e pianificare richieste di credito future nel momento più opportuno.
+                </div>
+
+                <h2>Diritti del Consumatore sui Tempi</h2>
+                
+                <p>La normativa europea e italiana ti garantisce diritti specifici riguardo ai tempi delle segnalazioni:</p>
+                <p>• <strong>Diritto all'informazione:</strong> Puoi conoscere in qualsiasi momento lo stato e i tempi delle tue segnalazioni</p>
+                <p>• <strong>Diritto alla correzione:</strong> Puoi richiedere la correzione di date errate</p>
+                <p>• <strong>Diritto alla cancellazione:</strong> Puoi richiedere la rimozione di segnalazioni scadute che non sono state eliminate automaticamente</p>
+
+                <div class="faq-section">
+                    <h2>Domande Frequenti sui Tempi CRIF</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Quanto tempo rimane una segnalazione negativa su CRIF?</div>
+                        <div class="faq-answer">Dipende dal tipo di inadempienza: i ritardi lievi rimangono 12 mesi, quelli gravi 24 mesi, mentre insolvenze e sofferenze permangono per 36 mesi dalla regolarizzazione della posizione.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">I tempi iniziano dalla data dell'inadempienza o dal pagamento?</div>
+                        <div class="faq-answer">I tempi di permanenza iniziano a decorrere dalla data di chiusura del rapporto creditizio o dalla regolarizzazione della posizione debitoria, non dalla data della prima inadempienza.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Posso accelerare i tempi di cancellazione di una segnalazione?</div>
+                        <div class="faq-answer">I tempi standard non possono essere accelerati, ma puoi richiedere la cancellazione anticipata se ci sono errori nei dati, violazioni procedurali o se raggiungi accordi specifici con il creditore.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Cosa succede se una segnalazione non viene rimossa automaticamente?</div>
+                        <div class="faq-answer">Se una segnalazione non viene cancellata automaticamente allo scadere dei termini, puoi presentare reclamo a CRIF richiedendo la rimozione immediata, citando la violazione dei termini di conservazione.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">I tempi sono gli stessi per tutti gli istituti di credito?</div>
+                        <div class="faq-answer">Sì, i tempi di permanenza delle segnalazioni sono standardizzati e stabiliti dalla normativa. Tutti gli istituti che segnalano a CRIF devono rispettare le stesse tempistiche.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <img src="assets/images/logo-cancella-segnalazione-crif.png" alt="Logo Cancella Segnalazione CRIF" class="logo">
+                <div>
+                    <p>&copy; 2024 - Guida Tempi Segnalazioni CRIF. Tutti i diritti riservati.</p>
+                    <p>Le informazioni contenute in questa pagina hanno carattere informativo e non costituiscono consulenza legale specifica.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/393520020306?text=Ciao%2C%20vorrei%20ricevere%20maggiori%20informazioni%20per%20risolvere%20il%20mio%20problema%20con%20i%20tempi%20delle%20segnalazioni%20CRIF" class="whatsapp-button" target="_blank">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.688"/>
+        </svg>
+        Contattaci
+    </a>
+
+    <script>
+        // Funzionalità per le FAQ
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isOpen = answer.style.display === 'block';
+                
+                // Chiudi tutte le altre FAQ
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.style.display = 'none';
+                });
+                
+                // Apri/chiudi la FAQ corrente
+                answer.style.display = isOpen ? 'none' : 'block';
+            });
+        });
+        
+        // Inizialmente nascondi tutte le risposte
+        document.querySelectorAll('.faq-answer').forEach(answer => {
+            answer.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
