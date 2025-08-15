@@ -133,6 +133,34 @@
       }
     }
   </style>
+    <style>
+.btn-leggi-articolo {
+  display: inline-block;
+  background-color: #000000;   /* sfondo nero */
+  color: #ffde59;              /* testo giallo */
+  padding: 10px 20px;          /* spazio interno */
+  text-decoration: none;       /* rimuove sottolineatura */
+  font-weight: bold;           /* testo in grassetto */
+  border-radius: 6px;          /* angoli arrotondati */
+  text-align: center;          /* centra il testo */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-leggi-articolo:hover {
+  background-color: #222222;   /* sfondo leggermente più chiaro */
+  color: #fff176;              /* giallo più chiaro */
+}
+
+/* Responsive: su schermi stretti il pulsante occupa tutta la card */
+@media (max-width: 768px) {
+  .btn-leggi-articolo {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+</style>
+
 </head>
 <body>
 
@@ -162,7 +190,8 @@
   loading="lazy" decoding="async">
                 <h3>Come cancellare una segnalazione in CRIF</h3>
                 <p>Guida passo-passo per capire come rimuovere una segnalazione negativa e migliorare il punteggio creditizio.</p>
-                <a href="visure-centrali-rischi">Leggi l'articolo</a>
+                <a href="visure-centrali-rischi" class="btn-leggi-articolo">Leggi l'articolo</a>
+
             </div>
 
             <!-- Altri articoli segnaposto -->
