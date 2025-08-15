@@ -118,6 +118,21 @@
             font-size: 14px;
         }
     </style>
+    <style>
+    .article-card .article-image {
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+    }
+    @supports not (aspect-ratio: 3 / 2) {
+      .article-card .article-image {
+        height: 200px;
+      }
+    }
+  </style>
 </head>
 <body>
 
