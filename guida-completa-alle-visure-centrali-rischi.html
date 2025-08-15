@@ -64,8 +64,6 @@
         }
       ]
     }
-    </script>
-    
     <style>
         * {
             margin: 0;
@@ -74,233 +72,700 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            color: #000;
-            background-color: #f8f9fa;
+            color: #333;
+            background-color: #ffffff;
         }
         
-        header {
-            background-color: #000;
-            color: white;
-            padding: 2rem 0;
+        header, footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px 0;
             text-align: center;
         }
         
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
+        .header-content, .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
         }
         
-        .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
+        .logo {
+            height: 50px;
+            width: auto;
+        }
+        
+        .header-text {
+            text-align: center;
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 0 20px;
         }
         
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
         main {
-            padding: 3rem 0;
-            background-color: white;
+            padding: 40px 0;
         }
         
         .content-widget {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border: 1px solid #e9ecef;
-        }
-        
-        h1, h2, h3 {
-            color: #000;
-            margin-bottom: 1rem;
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
+            background-color: #ffffff;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 20px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border: 1px solid #f0f0f0;
         }
         
         h2 {
-            font-size: 2rem;
-            font-weight: 600;
-            border-bottom: 3px solid #007bff;
-            padding-bottom: 0.5rem;
+            color: #000;
+            font-size: 1.8em;
+            margin: 30px 0 15px 0;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
         }
         
         h3 {
-            font-size: 1.5rem;
-            font-weight: 500;
-            color: #1a1a1a;
+            color: #333;
+            font-size: 1.4em;
+            margin: 25px 0 12px 0;
         }
         
         p {
-            margin-bottom: 1rem;
+            margin-bottom: 15px;
             text-align: justify;
         }
         
-        ul, ol {
-            margin: 1rem 0;
-            padding-left: 2rem;
+        .highlight {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #000;
+            margin: 20px 0;
+            border-radius: 5px;
         }
         
-        li {
-            margin-bottom: 0.5rem;
-        }
-        
-        .highlight-box {
+        .secret-box {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 1.5rem;
-            border-radius: 10px;
-            margin: 1.5rem 0;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
         }
         
-        .highlight-box h3 {
-            color: white;
-            margin-bottom: 1rem;
+        .secret-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
         
-        .warning-box {
-            background: #fff3cd;
-            border: 1px solid #ffeaa7;
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
+        .strategy-steps {
+            display: grid;
+            gap: 20px;
+            margin: 30px 0;
         }
         
-        .info-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .info-table th,
-        .info-table td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid #dee2e6;
-        }
-        
-        .info-table th {
-            background: #f8f9fa;
-            font-weight: 600;
-            color: #000;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1rem 2rem;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
+        .step-card {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #000;
+            position: relative;
             transition: transform 0.3s ease;
-            margin: 1rem 0;
         }
         
-        .cta-button:hover {
-            transform: translateY(-2px);
-            text-decoration: none;
-            color: white;
+        .step-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
         
-        footer {
+        .step-number {
+            position: absolute;
+            top: -10px;
+            left: 20px;
             background-color: #000;
             color: white;
-            padding: 3rem 0;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .step-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #000;
+            margin: 10px 0;
+            padding-top: 10px;
+        }
+        
+        .transformation-timeline {
+            background: linear-gradient(to right, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+            padding: 3px;
+            border-radius: 15px;
+            margin: 25px 0;
+        }
+        
+        .timeline-content {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+        
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .timeline-phase {
+            background-color: #000;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            min-width: 120px;
             text-align: center;
+            font-size: 0.9em;
         }
         
-        .footer-content {
+        .myth-buster {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .myth-title {
+            color: #856404;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .success-metrics {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
         }
         
-        .footer-section h3 {
+        .metric-card {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            margin-bottom: 1rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
         }
         
-        .footer-section p,
-        .footer-section a {
-            color: #ccc;
-            text-decoration: none;
+        .metric-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            display: block;
         }
         
-        .footer-section a:hover {
-            color: white;
+        .metric-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-top: 5px;
         }
         
-        /* WhatsApp Button */
+        .faq-section {
+            margin-top: 40px;
+        }
+        
+        .faq-item {
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            background-color: #f8f9fa;
+            padding: 15px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            transition: background-color 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background-color: #e9ecef;
+        }
+        
+        .faq-question::after {
+            content: '+';
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5em;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-question.active::after {
+            transform: translateY(-50%) rotate(45deg);
+        }
+        
+        .faq-answer {
+            padding: 15px 20px;
+            background-color: #ffffff;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-answer.active {
+            max-height: 200px;
+            padding: 15px 20px;
+        }
+        
         .whatsapp-button {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #25d366;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
             color: white;
             padding: 15px 20px;
             border-radius: 50px;
             text-decoration: none;
-            font-weight: 600;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-            z-index: 1000;
+            font-weight: bold;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
             transition: all 0.3s ease;
             display: flex;
             align-items: center;
             gap: 10px;
-            font-size: 16px;
+            z-index: 1000;
         }
         
         .whatsapp-button:hover {
-            background: #128c7e;
+            background-color: #20BA5A;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
-            text-decoration: none;
-            color: white;
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
         }
         
-        .whatsapp-button::before {
-            content: "📱";
-            font-size: 20px;
+        .whatsapp-icon {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
         }
         
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            
             .content-widget {
-                padding: 1.5rem;
+                padding: 25px;
+                margin: 15px 0;
             }
             
-            h2 {
-                font-size: 1.5rem;
-            }
-            
-            h3 {
-                font-size: 1.3rem;
+            h1 {
+                font-size: 1.8em;
             }
             
             .whatsapp-button {
+                bottom: 20px;
+                right: 20px;
                 padding: 12px 16px;
-                font-size: 14px;
-                bottom: 15px;
-                right: 15px;
+            }
+            
+            .header-content, .footer-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .logo {
+                height: 40px;
+            }
+            
+            .success-metrics {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+        }
+    </style><style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+        
+        header, footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .header-content, .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            height: 50px;
+            width: auto;
+        }
+        
+        .header-text {
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        main {
+            padding: 40px 0;
+        }
+        
+        .content-widget {
+            background-color: #ffffff;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 20px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border: 1px solid #f0f0f0;
+        }
+        
+        h2 {
+            color: #000;
+            font-size: 1.8em;
+            margin: 30px 0 15px 0;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #333;
+            font-size: 1.4em;
+            margin: 25px 0 12px 0;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .highlight {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #000;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .secret-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+        
+        .secret-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .strategy-steps {
+            display: grid;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .step-card {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #000;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .step-number {
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background-color: #000;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .step-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #000;
+            margin: 10px 0;
+            padding-top: 10px;
+        }
+        
+        .transformation-timeline {
+            background: linear-gradient(to right, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+            padding: 3px;
+            border-radius: 15px;
+            margin: 25px 0;
+        }
+        
+        .timeline-content {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+        
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .timeline-phase {
+            background-color: #000;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            min-width: 120px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        
+        .myth-buster {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .myth-title {
+            color: #856404;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .success-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .metric-card {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .metric-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .metric-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+        
+        .faq-section {
+            margin-top: 40px;
+        }
+        
+        .faq-item {
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            background-color: #f8f9fa;
+            padding: 15px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            transition: background-color 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background-color: #e9ecef;
+        }
+        
+        .faq-question::after {
+            content: '+';
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5em;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-question.active::after {
+            transform: translateY(-50%) rotate(45deg);
+        }
+        
+        .faq-answer {
+            padding: 15px 20px;
+            background-color: #ffffff;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-answer.active {
+            max-height: 200px;
+            padding: 15px 20px;
+        }
+        
+        .whatsapp-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 1000;
+        }
+        
+        .whatsapp-button:hover {
+            background-color: #20BA5A;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+        }
+        
+        .whatsapp-icon {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+        
+        @media (max-width: 768px) {
+            .content-widget {
+                padding: 25px;
+                margin: 15px 0;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .whatsapp-button {
+                bottom: 20px;
+                right: 20px;
+                padding: 12px 16px;
+            }
+            
+            .header-content, .footer-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .logo {
+                height: 40px;
+            }
+            
+            .success-metrics {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
             }
         }
     </style>
