@@ -119,20 +119,22 @@
         }
     </style>
     <style>
-    .article-card .article-image {
-      width: 100%;
-      aspect-ratio: 3 / 2;
-      display: block;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 10px;
-    }
-    @supports not (aspect-ratio: 3 / 2) {
-      .article-card .article-image {
-        height: 200px;
-      }
-    }
-  </style>
+.article-card img {
+  width: 100%;
+  aspect-ratio: 3 / 2;     /* mantiene proporzioni */
+  display: block;
+  object-fit: cover;       /* riempie senza deformare */
+  object-position: center; /* centra il soggetto */
+  border-radius: 10px;     /* angoli arrotondati */
+}
+
+@supports not (aspect-ratio: 3 / 2) {
+  .article-card img {
+    height: 200px;         /* fallback per browser vecchi */
+  }
+}
+</style>
+
     <style>
 .btn-leggi-articolo {
   display: inline-block;
